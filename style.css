@@ -1,0 +1,93 @@
+body{
+  background: linear-gradient(60deg,#84ffc9 33.33%, #aab2ff 33.33%,66.66%, #eca0ff 66.66%);
+  background-attachment: fixed;
+}
+.main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 90%;
+  padding: 2% 5%;
+  /* overflow: scroll; */
+  background-color: rgba(255, 255, 255, .45);
+  border-radius: 4vh;
+  border: 1px solid rgba(255, 255, 255, .25);
+  box-shadow: 0 0 1em 1em rgba(0, 0, 0, .25);
+  backdrop-filter: blur(1em);
+}
+.container{
+  display: flex;
+  height: 6vh;
+}
+input {
+  display: inline;
+  color: #242124;
+  font-size: 3.5vh;
+  padding: 0 0.5vw;
+  margin: 0 .5vw;
+  border: 0;
+  flex: 1;
+  background-color: rgba(255, 255, 255, .25);
+  border-radius: 2vh;
+  border: 1px solid rgba(255, 255, 255, .25);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+  backdrop-filter: blur(.5em);
+}
+
+
+
+li {
+  display: flex;
+  justify-content: flex-end;
+  height: 4vh;
+  margin: 2vh 1vh;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  color: #100C08;
+  font-size: 8vh;
+}
+h2 {
+  color: #100C08;
+  font-size: 5vh;
+}
+
+.delete{
+  filter: invert(18%) sepia(48%) saturate(7139%) hue-rotate(345deg) brightness(102%) contrast(88%);
+  height: 4vh;
+}
+.edit{
+  filter: invert(9%) sepia(100%) saturate(6456%) hue-rotate(298deg) brightness(72%) contrast(104%);
+  height: 4vh;
+  margin-right: .5vw;
+}
+#submit{
+  filter: invert(68%) sepia(61%) saturate(791%) hue-rotate(46deg) brightness(106%) contrast(113%);
+  height: 8vh;
+  transform: translateY(-10%);
+}
+.editButton{
+  filter: invert(68%) sepia(61%) saturate(791%) hue-rotate(46deg) brightness(106%) contrast(113%);
+  height: 6vh;
+  transform: translateY(-10%);
+  margin-right: .5vw;
+}
+.editInput{
+  display: block;
+  margin-right: .5vw;
+}
+.hide {
+  display: none;
+}
+
+@media (max-width:700px) {
+  .main {
+    width: 75%;
+}
+}
